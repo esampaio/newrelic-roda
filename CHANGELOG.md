@@ -1,5 +1,7 @@
 # Next Release
 
+* Update instrumentation call signature - [joofsh](https://github.com/joofsh/newrelic-roda)
+
 ## 1.0.0 (12/18/2012)
 
 * Initial public release - [mikz](https://github.com/mikz)

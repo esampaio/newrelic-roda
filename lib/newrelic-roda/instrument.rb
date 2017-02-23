@@ -12,7 +12,6 @@ module NewRelic
 
         module RequestMethods
           include ::NewRelic::Agent::MethodTracer
-          add_method_tracer :match_all
 
           def if_match(args, &block)
             instrumented = proc do |*captures|
@@ -30,6 +29,7 @@ module NewRelic
             end
             all
           end
+          add_method_tracer :match_all
 
           def block_result(result)
             begin
